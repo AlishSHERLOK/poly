@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+
+
+nav {
+    width: 960px;
+    margin: auto 0;
+}
+
+nav:before {
+    content: '';
+    display: block;
+    height: 50px;
+    width: 100%;
+    background: #000;
+    position:absolute;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px 10px 100px 100px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 50px;
+}
+ul li {
+    float: left;
+}
+
+ul li a {
+    color: #fff;
+    display:block;
+    height: 50px;
+    padding:0 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 50px;
+}
+ul li a:hover {
+    background: #d34d43;
+}
+body{
+    background-color: greenyellow;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 51, 0));
+}
+.image {
+	position	: relative;
+	width		: 100%; /* for IE 6 */
+}
+
+h2 {
+	position	: absolute;
+	top		: 200px;
+	left		: 0;
+	width		: 100%;
+}
+h2 span {
+	color			: white;
+	font			: bold 24px/45px Helvetica, Sans-Serif;
+	letter-spacing		: -1px;
+	background		: rgb(0, 0, 0); 
+}
