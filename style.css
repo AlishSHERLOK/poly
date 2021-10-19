@@ -45,27 +45,41 @@ ul li:first-child a:hover {
     border-radius: 10px 10px 10px 100px;
 }
 body{
-    background: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 51, 0));
+    background: linear-gradient(to left, rgba(110, 1, 253, 0.596),#11B9EE, rgba(0, 255, 242, 0.788));
     margin: 0;
     padding: 0;
 }
 /*Слайдер*/
 .slider{
-    width: 1100px;
-    height: 600px;
-    overflow: auto;
-    border: 10px solid #fff;
-    border-left-color: cyan;
-    border-right-color: darkblue;
-
+    width: 85%;
+    height: 85%;
+    overflow: scroll;
 }
 
+.container--title {
+    displaY: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider::-webkit-scrollbar {
+    overflow-y: hidden;
+    display: none;
+}
+
+.container--slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image--nyan {
+    width: 30%;
+    height: 60%;
+}
 .middle{
 position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-
 }
 .navigation{
     position: absolute;
@@ -75,52 +89,21 @@ transform: translate(-50%, -50%);
     display: flex;
 }
 
-.bar{
-    height: 8px;
-    width: 30px;
-    margin: 6px;
-    cursor: pointer;
-    background-color: chartreuse;
-    opacity: .5;
-    border-radius: 10px;
-    transition: all .4s ease;
-}
-.bar:hover{
-    opacity: 0.8;
-    transform: scale(1.1);
-
-}
-
-input[name='r']{
-    position: absolute;
-    visibility: hidden;
-}
-
 .slides {
-
-    width: 100%;
+    width: 400%;
+    margin-right: -10px;
     height: 100%;
     display: flex;
 }
 .slide {
-    width: 25%;
+    width: 100%;
     transition: all .6s ease;
 
 }
-
-.slide img {
-    width: 100%;
-    height: 100%;
+.kk{
+    text-align: center;
 }
-#r1:checked ~ .s1 {
-    margin-left:0;
-}
-#r2:checked ~ .s1 {
-    margin-left: -25%;
-}
-#r3:checked ~ .s1 {
-    margin-left: -50%;
-}
-#r4:checked ~ .s1 {
-    margin-left: -75%;
+.wrapper {
+    display: grid;
+    justify-content: center;
 }
